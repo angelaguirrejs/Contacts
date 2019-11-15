@@ -1,15 +1,12 @@
-page-home {
+page-contact {
 
 }
 
 .card-background-page {
 
-    .card-top {
+    ion-card {
       position: relative;
       text-align: center;
-      color: white;
-      background-color: #623CEA;
-      height: 150px;
     }
   
     .card-title {
@@ -28,28 +25,25 @@ page-home {
       width: 100%;
       color: #fff;
     }
+  
   }
 
+  .facebook{
+      color: #3b5998;
+  }
 
+  .twitter{
+      color: #00acee;
+  }
 
-.avatar{
-    width: 50px;
-    height: 50px;
-}
+  .mail{
+      color: #F49D37;
+  }
 
-.image{
-    float: left;
-    margin-right: 15px;
-}
+  .instagram{
+      color: #E4405F;
+  }
 
-.name{
-    font-size: 16px;
-}
-
-ion-card-content{
-    overflow: hidden;
-}
-
-.contact-card{
-    border-color: #FF6B6B;
-}
+  .deleteBtn{
+      float: right;
+  }
