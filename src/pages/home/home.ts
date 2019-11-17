@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import { ContactPage } from '../contact/contact';
+import { AddContactPage } from '../add-contact/add-contact';
 
 
 @Component({
@@ -21,6 +22,11 @@ export class HomePage {
       }, error => {
         console.log(JSON.stringify(error));
       });
+  }
+
+  addContact()
+  {
+    this.navCtrl.push(AddContactPage);
   }
 
   showContact(contact)
