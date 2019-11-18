@@ -15,6 +15,11 @@ export class HomePage {
   quantity = null;
 
   constructor(public navCtrl: NavController, public http: HttpClient) {
+
+  }
+
+  ionViewWillEnter()
+  {
       this.http.get("contacts/api/contacts")
       .subscribe(data => {
           this.data = data;

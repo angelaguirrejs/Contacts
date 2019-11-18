@@ -45,6 +45,8 @@ export class AddContactPage {
     }, error => {
       console.log(JSON.stringify(error));
     })
+
+    this.navCtrl.pop();
   }
 
   ionViewDidLoad() {
